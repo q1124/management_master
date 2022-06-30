@@ -1,3 +1,20 @@
+# morimoriex
+![千森集運系統](https://i.imgur.com/NeYYuwG.jpg)
+![千森集運系統](https://i.imgur.com/iED5MIF.jpg)
+![千森集運系統](https://i.imgur.com/D4p4jMj.jpg)
+
+日本千森集運系統
+
+morimoriex [link](https://cms.morimoriex.com/)
+
+## Technique & skill
+* Html
+* CSS
+* JS
+* PHP
+* Laravel
+
+
 專案建置
 - 請先執行composer install安裝
 ```
