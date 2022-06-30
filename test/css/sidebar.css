@@ -1,0 +1,67 @@
+.container-fluid,.row {
+    margin: 0;
+    padding: 0;
+}
+.col-lg-12,.col-lg-2,.col-lg-10{
+    padding: 0;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: #363740;
+}
+/* siderbar logo */
+.sidebar-logo {
+    padding: 40px 20px 20px 20px;
+}
+.sidebar-logo img {
+    width: 100%;
+}
+/* siderbar-main */
+.sidebar-card {
+    background-color: none!important;
+}
+.sidebar-line {
+    border-left: solid 5px #DDE2FF;
+}
+.sidebar-header {
+    background-color: #9fa2b410;
+    padding: .75rem 1.25rem;
+    position: relative;
+    border-radius: unset;
+}
+
+.sidebar-title {
+    display: flex;
+}
+.sidebar-header .sidebar-title button {
+    font-size: 13px;
+    color: #DDE2FF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+.sidebar-header .sidebar-title button img {
+    margin-right: 20px;
+}
+.sidebar-down{
+    position: absolute;
+    right: 0;
+}
+.card-body {
+    padding: 0;
+    position: relative;
+}
+.siderbar-list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+}
+.siderbar-list li {
+    font-size: 14px;
+    color: #A4A6B3;
+    list-style: none;
+    padding: 15px 0px;
+}

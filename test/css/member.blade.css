@@ -1,0 +1,187 @@
+/* member */
+.col-lg-12,.col-lg-4,.col-lg-7,.col {
+    padding: 0;
+}
+.member-body {
+    overflow-x: hidden;
+    height: 100vh;
+    overflow:scroll;
+    padding: 30px 30px;
+    background-color: #F7F8FC;
+}
+.right-memeber {
+    justify-content: space-between;
+}
+/* mark */
+.member-big-mark h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.member-sort{
+    background-color: #E9ECEF;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+.member-sort p {
+    font-size: 16px;
+    color: #6C757D;
+    margin-bottom: 0;
+}
+.member-sort .sort-name {
+    font-size: 16px;
+    color: #007BFF;
+}
+
+/* ---right memeber--- */
+/* member block */
+.member-block {
+    border: 1px solid #DFDFDF;
+    border-radius: 5px;
+    height: 100%;
+    background-color: #fff;
+}
+.member-title {
+    background-color: #f8f6f6;
+    border-bottom: 1px solid #DFDFDF;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+}
+.member-title h2 {
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.member-title .edit-infro {
+    position: absolute;
+    right: 20px;
+    background-color: #343A40;
+    border-radius: 4px;
+    color: #f8f6f6a4;
+    font-size: 12px;
+    padding: 5px 8px;
+    outline: unset;
+}
+/* table menber */
+.personal-information {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.infro-title td {
+    color: #212529;
+    font-size: 14px;
+    padding: 0px 0px 5px 20px;
+}
+/* ---infro edit modal--- */
+/* vendor edit modal */
+.edit-content {
+    width: 670px;
+}
+.edit-header  {
+    justify-content: center;
+}
+.edit-header .edit-title {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.modal-header .close {
+    position: absolute;
+    right: 20px;
+}
+.edit-body {
+    width: 60%;
+    margin: 30px auto;
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+.member-num {
+    color: #868686;
+    width: 100%;
+}
+.edit-body p {
+    font-size: 14px;
+    margin-bottom: 0;
+    width: 40%;
+}
+.edit-body .edit-data {
+    display: flex;
+    margin-bottom: 2px;
+}
+.edit-body input {
+    border: 1px solid #59ACE8;
+    background-color: #F4F4F4;
+    width: 100%;
+}
+/* member edit modal */
+.member-modal {
+    border: none;
+}
+.member-newpassword input{
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px #343a4036;
+    color: #343A40;
+    padding: 15px 15px;
+    margin-bottom: 5px;
+}
+
+/* gold block */
+.gold-flow {
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+/* gold stored */
+.gold-add {
+    position: absolute;
+    right: 20px;
+    font-size: 12px;
+    padding: 5px 8px;
+    background-color: #FFC107 !important;
+    color: #fff;
+}
+.first-stored-block {
+    height: 190px;
+}
+.sec-stored-block {
+    height: 220px;
+}
+.thr-stored-block {
+    height: 200px;
+}
+.stored-table {
+    overflow: scroll;
+    margin: 0px 10px;
+}
+.stored-information {
+    margin:12px auto;
+    width: 100%;
+}
+.stored-table-title td{
+    color: #17A2B8;
+}
+.stored-title td {
+    margin: 0 auto;
+    padding-top: 5px;
+}
+.gold-line {
+    border-bottom: 1px solid #DFDFDF;
+}
+.explanation {
+    display: flex;
+    align-items: center;
+}
+.explanation-btn {
+    margin-left: 10px;
+}
+.explanation-btn button{
+    background-color: #343A40;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    padding: 3px 10px;
+}

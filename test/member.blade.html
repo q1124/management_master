@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/management-master/test/css/sidebar.css">
+    <link rel="stylesheet" href="/management-master/test/css/member.blade.css">
+    <link rel="stylesheet" href="/management-master/test/css/swap.css">
+
+</head>
+
+<body>
+    <!-- member section -->
+    <section class="member-section container-fluid">
+        <div class="member-main row col-12">
+            <!-- sidebar -->
+            <div class="sidebar col-lg-2">
+                <div class="sidebar-logo">
+                    <img src="/management-master/public/css/image/login-logo.png" alt="">
+                </div>
+                <!--/ vendor sidebar-card /-->
+                <div id="accordion" class="sidebar-accordion vendor-sidebar">
+                    <!--sidebar-card-->
+                    <div class="sidebar-card">
+                        <div class="sidebar-header sidebar-line" id="headingOne">
+                            <h5 class="mb-0 sidebar-title">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    <img src="/management-master/public/css/image/siderbar-img-01.png" alt="">
+                                    會員管理
+                                </button>
+                            </h5>
+                        </div>
+                    </div>
+                    <!--sidebar-card-->
+                    <div class="sidebar-card">
+                        <div class="sidebar-header" id="headingTwo">
+                            <h5 class="mb-0 sidebar-title">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    <img style="margin-left:5px" src="/management-master/public/css/image/siderbar-img-02.png" alt="">
+                                    資料匯入
+                                    <div class="sidebar-down">
+                                        <img src="/management-master/public/css/image/siderbar-img-03.png" alt="">
+                                    </div>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="siderbar-list">
+                                    <li>匯入入倉履歷</li>
+                                    <li>匯入運輸紀錄</li>
+                                    <li>匯入出貨明細</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ member sidebar-card /-->
+                <div id="accordion" class="sidebar-accordion member-sidebar">
+                    <!--sidebar-card-->
+                    <div class="sidebar-card">
+                        <div class="sidebar-header" id="headingTwo">
+                            <h5 class="mb-0 sidebar-title">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    <img style="margin-left:5px" src="/management-master/public/css/image/siderbar-img-02.png" alt="">
+                                    首頁
+                                    <div class="sidebar-down">
+                                        <img src="/management-master/public/css/image/siderbar-img-03.png" alt="">
+                                    </div>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="siderbar-list">
+                                    <li>個人基本資料</li>
+                                    <li>預付金紀錄</li>
+                                    <li>入倉履歷</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- member body -->
+            <div class="member-body col-lg-10">
+                <!-- mark -->
+                <div class="member-big-mark">
+                    <h1>千森株式會社會員管理平台</h1>
+                    <div class="member-sort">
+                        <p class="member-mark">首頁</p>
+                        <p class="vendor-mark">會員管理 / <span class="sort-name">王喜花</span> </p>
+                    </div>
+                </div>
+                <!-- right memeber -->
+                <div class="right-memeber row col-lg-12">
+                    <!-- member block  -->
+                    <div class="member-block col-lg-4">
+                        <div class="member-title">
+                            <h2>會員基本資料</h2>
+                            <button class="btn edit-infro vendor-btn" data-toggle="modal"
+                                data-target="#vendorEditModal">編輯</button>
+                            <button class="btn edit-infro member-btn" data-toggle="modal"
+                                data-target="#memberEditModal">變更密碼</button>
+                        </div>
+                        <!-- ---edit modal--- -->
+                        <!--/ vendor edit modal / -->
+                        <div class="modal edit-modal vendor-modal" id="vendorEditModal" tabindex="-1" role="dialog"
+                            aria-labelledby="editModal" aria-hidden="true">
+                            <div class="modal-dialog edit-dialog " role="document">
+                                <div class="modal-content edit-content">
+                                    <div class="modal-header edit-header">
+                                        <h5 class="edit-title vendor-mark">編輯會員基本基料</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <!-- vendor edit body -->
+                                    <div class="modal-body edit-body vendor-modal">
+                                        <span class="edit-data">
+                                            <p>會員編號</p><span class="member-num">CM001</span>
+                                        </span>
+                                        <span class="edit-data">
+                                            <p>真實姓名</p><input type="text" placeholder="王喜花">
+                                        </span>
+                                        <span class="edit-data">
+                                            <p>出生年月日</p><input type="date" placeholder="1990-05-13">
+                                        </span>
+                                        <span class="edit-data">
+                                            <p>聯絡地址</p><input type="text" placeholder="台北市中正區辛亥路一段3號">
+                                        </span>
+                                        <span class="edit-data">
+                                            <p>聯絡電話</p><input type="tel" placeholder="0925698755">
+                                        </span>
+                                        <span class="edit-data">
+                                            <p>密碼</p><input type="password" placeholder="XXXXXX">
+                                        </span>
+                                        <span class="edit-data">
+                                            <p>收件地址</p><input type="text" placeholder="台北市中正區辛亥路一段3號">
+                                        </span>
+                                        <span class="edit-data">
+                                            <p>收件人電話</p><input type="tel" placeholder="0925698755">
+                                        </span>
+                                        <span class="edit-data">
+                                            <p>LINE ID</p><input type="text" placeholder="abc1234">
+                                        </span>
+                                        <span class="edit-data">
+                                            <p>電子信箱</p><input type="email" placeholder="abc123@gmail.com">
+                                        </span>
+                                        <span class="edit-data">
+                                            <p>性別</p><input type="text" placeholder="女">
+                                        </span>
+                                    </div>
+                                    <!-- infro edit submit -->
+                                    <div class="modal-footer edit-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                                        <button type="button" class="btn btn-primary">儲存變更</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ member edit modal / -->
+                        <div class="modal edit-modal member-modal" id="memberEditModal" tabindex="-1" role="dialog"
+                            aria-labelledby="editModal" aria-hidden="true">
+                            <div class="modal-dialog edit-dialog " role="document">
+                                <div class="modal-content edit-content">
+                                    <div class="modal-header edit-header">
+                                        <h5 class="edit-title member-mark">變更密碼</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <!-- member edit body -->
+                                    <div class="modal-body edit-body member-modal">
+                                        <span class="edit-data member-newpassword">
+                                            <input type="password" placeholder="新密碼">
+                                        </span>
+                                        <span class="edit-data member-newpassword">
+                                            <input type="password" placeholder="二次輸入新密碼">
+                                        </span>
+                                    </div>
+                                    <!-- infro edit submit -->
+                                    <div class="modal-footer edit-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                                        <button type="button" class="btn btn-primary">儲存變更</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ---table menber--- -->
+                        <table class="personal-information">
+                            <tbody class="infro-body">
+                                <tr class="infro-title">
+                                    <td>會員編號</td>
+                                    <td>CM001</td>
+                                </tr>
+                                <tr class="infro-title">
+                                    <td>真實姓名</td>
+                                    <td>王喜花</td>
+                                </tr>
+                                <tr class="infro-title">
+                                    <td>出生年月日</td>
+                                    <td>1990-05-13</td>
+                                </tr>
+                                <tr class="infro-title">
+                                    <td>聯絡地址</td>
+                                    <td>台北市中正區辛亥路一段3號</td>
+                                </tr>
+                                <tr class="infro-title">
+                                    <td>聯絡電話</td>
+                                    <td>0925698755</td>
+                                </tr>
+                                <tr class="infro-title">
+                                    <td>密碼</td>
+                                    <td>XXXXXXXXX</td>
+                                </tr>
+                                <tr class="infro-title">
+                                    <td>收件地址</td>
+                                    <td>台北市中正區辛亥路一段3號</td>
+                                </tr>
+                                <tr class="infro-title">
+                                    <td>收件人電話</td>
+                                    <td>0925698755</td>
+                                </tr>
+                                <tr class="infro-title">
+                                    <td>LINE ID</td>
+                                    <td>abc1234</td>
+                                </tr>
+                                <tr class="infro-title">
+                                    <td>電子信箱</td>
+                                    <td>abc123@gmail.com</td>
+                                </tr>
+                                <tr class="infro-title">
+                                    <td>性別</td>
+                                    <td>女</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Gold block -->
+                    <div class="gold-block col">
+                        <!-- Gold block-1 -->
+                        <div class="gold-flow col">
+                            <!-- gold stored -->
+                            <div class="member-block">
+                                <div class="member-title">
+                                    <h2>預付金儲值紀錄</h2>
+                                    <button class="btn member-infro gold-add vendor-btn" data-toggle="modal"
+                                        data-target="#goldEditModal">新增</button>
+                                </div>
+                                <!-- gold edit modal -->
+                                <div class="modal edit-modal" id="goldEditModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="editModal" aria-hidden="true">
+                                    <div class="modal-dialog edit-dialog " role="document">
+                                        <div class="modal-content edit-content">
+                                            <div class="modal-header edit-header">
+                                                <h5 class="edit-title">編輯預付金紀錄</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <!-- gold edit body -->
+                                            <div class="modal-body edit-body">
+                                                <span class="edit-data gold-data">
+                                                    <p>儲值日期</p><input type="date" placeholder="2021年月14號">
+                                                </span>
+                                                <span class="edit-data">
+                                                    <p>儲值金額 <br> (台幣)</p><input type="number" placeholder="10,000">
+                                                </span>
+                                                <span class="edit-data gold-data">
+                                                    <p>使用匯率</p><input type="number" placeholder="0.265">
+                                                </span>
+                                                <span class="edit-data gold-data">
+                                                    <p>日幣金額</p><input type="number" placeholder="37,736">
+                                                </span>
+                                                <span class="edit-data gold-data">
+                                                    <p>備註</p><input type="text" placeholder="說明文字內容">
+                                                </span>
+                                            </div>
+                                            <!-- gold edit submit -->
+                                            <div class="modal-footer edit-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">關閉</button>
+                                                <button type="button" class="btn btn-primary">儲存變更</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- table stored -->
+                                <div class="stored-table first-stored-block">
+                                    <table class="personal-information stored-information">
+                                        <tbody class="stored-body">
+                                            <!-- title -->
+                                            <tr class="stored-table-title infro-title gold-line stored-title">
+                                                <td>儲值日期</td>
+                                                <td>儲值金額(台幣)</td>
+                                                <td>使用匯率</td>
+                                                <td>日幣金額</td>
+                                                <td>備註</td>
+                                            </tr>
+                                            <!-- body -->
+                                            <!-- gold stored-1 -->
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>2021年5月14號</td>
+                                                <td>10,000</td>
+                                                <td>0.265</td>
+                                                <td>37736</td>
+                                                <td class="explanation">說明文字內容
+                                                    <div class="explanation-btn vendor-btn">
+                                                        <button class="btn">編輯</button>
+                                                        <button class="btn">刪除</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- gold stored-2 -->
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>2021年5月14號</td>
+                                                <td>10,000</td>
+                                                <td>0.265</td>
+                                                <td>37736</td>
+                                                <td class="explanation">說明文字內容
+                                                    <div class="explanation-btn vendor-btn">
+                                                        <button class="btn">編輯</button>
+                                                        <button class="btn">刪除</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- gold stored-3 -->
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>2021年5月14號</td>
+                                                <td>10,000</td>
+                                                <td>0.265</td>
+                                                <td>37736</td>
+                                                <td class="explanation">說明文字內容
+                                                    <div class="explanation-btn vendor-btn">
+                                                        <button class="btn">編輯</button>
+                                                        <button class="btn">刪除</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- gold stored-4 -->
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>2021年5月14號</td>
+                                                <td>10,000</td>
+                                                <td>0.265</td>
+                                                <td>37736</td>
+                                                <td class="explanation">說明文字內容
+                                                    <div class="explanation-btn vendor-btn">
+                                                        <button class="btn">編輯</button>
+                                                        <button class="btn">刪除</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gold block-2 -->
+                        <div class="gold-flow col">
+                            <!-- gold stored -->
+                            <div class="member-block">
+                                <div class="member-title">
+                                    <h2>預付金使用紀錄</h2>
+                                </div>
+                                <!-- table stored -->
+                                <div class="stored-table sec-stored-block">
+                                    <table class="personal-information stored-information">
+                                        <tbody class="stored-body">
+                                            <!-- title -->
+                                            <tr class="stored-table-title infro-title gold-line stored-title">
+                                                <td style="color: #FFC107;">您目前的購物金餘額</td>
+                                            </tr>
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>12666</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="personal-information stored-information">
+                                        <tbody class="stored-body">
+                                            <!-- title -->
+                                            <tr class="stored-table-title infro-title gold-line stored-title">
+                                                <td>使用日期</td>
+                                                <td>國際貨運追蹤號碼</td>
+                                                <td>購物金額(日幣)</td>
+                                            </tr>
+                                            <!-- body -->
+                                            <!-- gold stored-1 -->
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>2021年5月14號</td>
+                                                <td>EX88822222</td>
+                                                <td>32000</td>
+                                            </tr>
+                                            <!-- gold stored-2 -->
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>2021年5月14號</td>
+                                                <td>EX88822979</td>
+                                                <td>1000</td>
+                                            </tr>
+                                            <!-- gold stored-3 -->
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>2021年5月14號</td>
+                                                <td>EX88822979</td>
+                                                <td>1000</td>
+                                            </tr>
+                                            <!-- gold stored-4 -->
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>2021年5月14號</td>
+                                                <td>EX88822979</td>
+                                                <td>1000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gold block-3 -->
+                        <div class="gold-flow col">
+                            <!-- gold stored -->
+                            <div class="member-block">
+                                <div class="member-title">
+                                    <h2>入倉履歷</h2>
+                                    <button class="btn member-infro gold-add vendor-btn" data-toggle="modal"
+                                        data-target="#goldAddModal">新增</button>
+                                </div>
+                                <!-- gold edit modal -->
+                                <div class="modal edit-modal" id="goldAddModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="editModal" aria-hidden="true">
+                                    <div class="modal-dialog edit-dialog " role="document">
+                                        <div class="modal-content edit-content">
+                                            <div class="modal-header edit-header">
+                                                <h5 class="edit-title">新增預付金紀錄</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <!-- gold edit body -->
+                                            <div class="modal-body edit-body">
+                                                <span class="edit-data gold-data">
+                                                    <p>儲值日期</p><input type="date" placeholder="">
+                                                </span>
+                                                <span class="edit-data">
+                                                    <p>儲值金額 <br> (台幣)</p><input type="number" placeholder="">
+                                                </span>
+                                                <span class="edit-data gold-data">
+                                                    <p>使用匯率</p><input type="number" placeholder="">
+                                                </span>
+                                                <span class="edit-data gold-data">
+                                                    <p>日幣金額</p><input type="number" placeholder="">
+                                                </span>
+                                                <span class="edit-data gold-data">
+                                                    <p>備註</p><input type="text" placeholder="">
+                                                </span>
+                                            </div>
+                                            <!-- gold edit submit -->
+                                            <div class="modal-footer edit-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">關閉</button>
+                                                <button type="button" class="btn btn-primary">儲存變更</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- table stored -->
+                                <div class="stored-table thr-stored-block">
+                                    <table class="personal-information stored-information">
+                                        <tbody class="stored-body">
+                                            <!-- title -->
+                                            <tr class="stored-table-title infro-title gold-line stored-title">
+                                                <td>入倉日期</td>
+                                                <td>國內運輸公司/取貨地點</td>
+                                                <td>日本國內運輸公司追蹤單號</td>
+                                            </tr>
+                                            <!-- body -->
+                                            <!-- gold stored-1 -->
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>2021年5月14號</td>
+                                                <td>YAMATO</td>
+                                                <td>5579498465456</td>
+                                                <td class="explanation">
+                                                    <div class="explanation-btn vendor-btn">
+                                                        <button class="btn">編輯</button>
+                                                        <button class="btn">刪除</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- gold stored-2 -->
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>2021年5月14號</td>
+                                                <td>YAMATO</td>
+                                                <td>5579498465456</td>
+                                                <td class="explanation">
+                                                    <div class="explanation-btn vendor-btn">
+                                                        <button class="btn">編輯</button>
+                                                        <button class="btn">刪除</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- gold stored-3 -->
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>2021年5月14號</td>
+                                                <td>YAMATO</td>
+                                                <td>5579498465456</td>
+                                                <td class="explanation">
+                                                    <div class="explanation-btn vendor-btn">
+                                                        <button class="btn">編輯</button>
+                                                        <button class="btn">刪除</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- gold stored-4 -->
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>2021年5月14號</td>
+                                                <td>YAMATO</td>
+                                                <td>5579498465456</td>
+                                                <td class="explanation">
+                                                    <div class="explanation-btn vendor-btn">
+                                                        <button class="btn">編輯</button>
+                                                        <button class="btn">刪除</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- gold stored-5 -->
+                                            <tr class="infro-title stored-title gold-line">
+                                                <td>2021年5月14號</td>
+                                                <td>YAMATO</td>
+                                                <td>5579498465456</td>
+                                                <td class="explanation">
+                                                    <div class="explanation-btn vendor-btn">
+                                                        <button class="btn">編輯</button>
+                                                        <button class="btn">刪除</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+.login-section {
+    position: relative;
+    background-color: #363740;
+    height: 100vh;
+}
+.login-body {
+    position: absolute;
+    left: 50%;
+    top:45%;
+    transform: translate(-50%,-50%);
+}
+.logo-image {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}
+#loginBlock {
+    display: block;
+}
+.login-block {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 60px 60px 40px 60px;
+    width: 460px;
+    margin-top: 20px;
+}
+.login-block .login-title {
+    text-align: center;
+    color: #343A40;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.login-check {
+    margin: 0 auto;
+}
+.login-input{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 0px;
+}
+.login-check input {
+    box-shadow: unset;
+    outline: unset;
+    border: unset;
+}
+.login-check input::placeholder{
+    font-size: 16px;
+    color: #343A40;
+}
+.login-admin {
+    display: flex;
+    justify-content: center;
+    background-color: #6C757D;
+    margin: 0px auto;
+    width: 50%;
+    border-radius: 4px;
+}
+.login-admin button {
+    color: #fff;
+}
+.login-admin input{
+    background-color: unset;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.password-edit {
+    text-align: center;
+}
+.password-edit button {
+    font-size: 14px;
+    padding: 0;
+    margin: 0px 5px;
+    border-radius: unset;
+    color: #007BFF;
+    border-bottom: 1px solid #007BFF;
+}
+
+/* ---register block---- */
+#registerBlock {
+    display: none;
+}
+.register-body {
+    margin: 30px auto;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+.member-num {
+    color: #868686;
+    width: 100%;
+}
+.register-body p {
+    font-size: 14px;
+    margin-bottom: 0;
+    width: 40%;
+}
+.register-body .register-data {
+    display: flex;
+    margin-bottom: 2px;
+}
+.register-data input {
+    border: 1px solid #59ACE8;
+    background-color: #F4F4F4;
+    width: 100%;
+}
+.register-data input::placeholder{
+    font-size: 10px;
+}
+/* ---check block---- */
+.check-block p {
+    font-size: 14px;
+}
+/* ----terms block---- */
+.terms-block {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.terms-block button a{
+    color: #A4A6B3;
+    border-bottom: 1px solid #A4A6B3;
+    text-decoration: none;
+}
+
+/* ---forget block---- */
+.forget-block {
+    display: none;
+}

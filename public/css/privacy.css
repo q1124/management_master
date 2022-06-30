@@ -1,0 +1,29 @@
+.test-block {
+    margin: 0 auto;
+    padding: 0px 30px;
+    max-width:1150px;
+    padding-top: 50px;
+}
+.test-mask {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.test-block .test-title {
+    text-align: center;
+    padding-bottom: 40px;
+}
+.inside li {
+    margin-left: 40px;
+}
+.test-list li {
+    font-size: 15px;
+    line-height: 30px;
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+.test-list-details {
+    padding: 20px 0px;
+}
+.test-list-details li {
+    list-style-type: disc;
+}
