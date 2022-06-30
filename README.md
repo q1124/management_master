@@ -36,5 +36,3 @@ DB_PASSWORD=
 ```
 php artisan migrate --seed
 ```
-
-abc# management_master
